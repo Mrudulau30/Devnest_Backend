@@ -1,5 +1,5 @@
 # DAY-2
-Postgres Commands
+### Postgres Commands
 #### Create database devnest
 ```
  CREATE DATABASE devnest;
