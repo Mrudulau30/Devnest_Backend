@@ -1,110 +1,110 @@
 # DAY-1
 ## Redis CLI Commands
-#### 1) Create key-value pair
+### 1) Create key-value pair
 ```
 SET Key Pair
 ```
-#### 2) Display value 
+### 2) Display value 
 ```
  GET key
 ```
-#### 3) Check particular Key exists
+### 3) Check particular Key exists
 ```
  EXISTS Key
  ```
-#### 4) Display all keys
+### 4) Display all keys
 ```
  KEYS *
  ```
-#### 5) Delete single key
+### 5) Delete single key
 ```
  DEL Key
  ```
-#### 6) Expire key after some time
+### 6) Expire key after some time
 ```
 EXPIRE Key Time
 ```
-#### 7) Add key-value pair with expire time
+### 7) Add key-value pair with expire time
 ```
  SETEX Key TIME Value
  ```
 ## ARRAY 
-#### 8) Add element to start of Array
+### 8) Add element to start of Array
 ```
  LPUSH key Element
 ```
-#### 9) Add element to end of Array
+### 9) Add element to end of Array
 ```
  RPUSH key Element
 ```
-#### 10) show array
+### 10) show array
 ```
 LRANGE key start_index end_index
 ```
-#### 11) Remove element from the start of array
+### 11) Remove element from the start of array
 ```
  LPOP key
 ```
-#### 12) Remove element from the start of array
+### 12) Remove element from the start of array
 ```
  RPOP key
 ```
 ## OBJECTS
-####  13) Add field to Object
+###  13) Add field to Object
 ```
  HSET key field value
 ```
-####  14) Get field value from key
+###  14) Get field value from key
 ```
  HGET key field
 ```
-####  15) Check filed exists in key
+###  15) Check filed exists in key
 ```
  HEXISTS key field
 ```
-####  16) Display all field in key
+###  16) Display all field in key
 ```
  HKEYS key
 ```
-####  17) Delete field in key
+###  17) Delete field in key
 ```
 HDEL key field
 ```
 ## POSTGRES COMMANDS
-#### 18) Start Postgres
+### 18) Start Postgres
 ```
  psql -U postgres
 ```
-#### 19) Create new user
+### 19) Create new user
 ```
  CREATE  USER username WITH PASSWORD password;
 ```
-#### 20) Create Database
+### 20) Create Database
 ```
  CREATE DATABASE database_name;
 ```
-#### 21) Drop database
+### 21) Drop database
 ```
  DROP DATABASE database_name;
 ```
-#### 22) Grant privileges
+### 22) Grant privileges
 ```
 GRANT PRIVILEGES ON database_name TO username;
 ```
-#### 23) List all database
+### 23) List all database
 ```
  \l
 ```
-#### 24) Display all tables
+### 24) Display all tables
 ```
  \d
  ```
-#### 25) Display structure of table
+### 25) Display structure of table
 
 ```
 \d table_name;
 ```
-#### 26) Drop table
+### 26) Drop table
 ```
  DROP TABLE table_name
 ``` 
