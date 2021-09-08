@@ -52,7 +52,9 @@
 #### 24) Display all tables
 > \d
 #### 25) Display structure of table
-> \d table_name;
+` ` `
+\d table_name;
+` ` `
 #### 26) Drop table
 ```
  DROP TABLE table_name
