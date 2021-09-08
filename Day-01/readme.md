@@ -31,69 +31,69 @@ EXPIRE Key Time
 ## ARRAY 
 #### 8) Add element to start of Array
 ```
-> LPUSH key Element
+ LPUSH key Element
 ```
 #### 9) Add element to end of Array
 ```
-> RPUSH key Element
+ RPUSH key Element
 ```
 #### 10) show array
 ```
-> LRANGE key start_index end_index
+LRANGE key start_index end_index
 ```
 #### 11) Remove element from the start of array
 ```
-> LPOP key
+ LPOP key
 ```
 #### 12) Remove element from the start of array
 ```
-> RPOP key
+ RPOP key
 ```
 ## OBJECTS
 ####  13) Add field to Object
 ```
-> HSET key field value
+ HSET key field value
 ```
 ####  14) Get field value from key
 ```
-> HGET key field
+ HGET key field
 ```
 ####  15) Check filed exists in key
 ```
-> HEXISTS key field
+ HEXISTS key field
 ```
 ####  16) Display all field in key
 ```
-> HKEYS key
+ HKEYS key
 ```
 ####  17) Delete field in key
 ```
-> HDEL key field
+HDEL key field
 ```
 ## POSTGRES COMMANDS
 #### 18) Start Postgres
 ```
-> psql -U postgres
+ psql -U postgres
 ```
 #### 19) Create new user
 ```
-> CREATE  USER username WITH PASSWORD password;
+ CREATE  USER username WITH PASSWORD password;
 ```
 #### 20) Create Database
 ```
-> CREATE DATABASE database_name;
+ CREATE DATABASE database_name;
 ```
 #### 21) Drop database
 ```
-> DROP DATABASE database_name;
+ DROP DATABASE database_name;
 ```
 #### 22) Grant privileges
 ```
-> GRANT PRIVILEGES ON database_name TO username;
+GRANT PRIVILEGES ON database_name TO username;
 ```
 #### 23) List all database
 ```
-> \l
+ \l
 ```
 #### 24) Display all tables
 ```
