@@ -1,24 +1,37 @@
-node index.js 
---create-file file_name
->>>create new file
+var fs = require("fs");
 
---create-file-with-text file_name text
->>>create file with some text
+var myArgs = process.argv.slice(2);
+console.log("Arguments : ", myArgs);
 
---create-dir
->>>create directory
+switch (myArgs[0]) {
+  case "--create-dir":
+    fs.mkdirSync(myArgs[1]);
+    break;
 
---rename-file old_name new_name
->>>rename file
+  case "--create-file":
+    fs.writeFileSync(myArgs[1], myArgs[2], function (err) {
+      if (err) {
+        console.log(err);
+      }
+    });
+    break;
 
---delete-file file_name
->>>delete file
+  case "--read-file":
+    fs.readFileSync(myArgs[1], myArgs[2]);
+    break;
 
---rename-dir old_name new_name
->>>rename directory
+  case "--rename-file":
+    fs.renameSync(myArgs[1], myArgs[2]);
+    break;
+    
+  case "--delete-dir":
+    fs.rmdirSync(myArgs[1]);
+    break;
 
---delete-dir directory_name
->>>delete directory
+  case "--delete-file":
+    fs.unlinkSync(myArgs[1]);
+    break;
 
-
-
+  default:
+    console.log("check the input !!");
+}
