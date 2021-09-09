@@ -11,11 +11,12 @@ class Test1{
 module.exports=Test;
 
 // > var Test=require('./practice_test.js');
-// undefined
-// > var obj=new Test();
-// undefined
-// > console.log(obj.print());
-// I am inside class
-// undefined
-// undefined
-//This is output
+undefined
+> var obj=new Test();
+undefined
+> console.log(obj.print());
+-->
+I am inside class
+undefined
+undefined
+This is output //

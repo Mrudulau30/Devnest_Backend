@@ -1,0 +1,24 @@
+node index.js 
+--create-file file_name
+>>>create new file
+
+--create-file-with-text file_name text
+>>>create file with some text
+
+--create-dir
+>>>create directory
+
+--rename-file old_name new_name
+>>>rename file
+
+--delete-file file_name
+>>>delete file
+
+--rename-dir old_name new_name
+>>>rename directory
+
+--delete-dir directory_name
+>>>delete directory
+
+
+
