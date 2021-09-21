@@ -3,7 +3,7 @@
 ### 1) Create key-value pair
 ```
 SET Key Pair
-```
+cd
 ### 2) Display value 
 ```
  GET key
