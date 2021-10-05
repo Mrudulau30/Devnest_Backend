@@ -4,7 +4,7 @@ var router = express.Router();
 
 var registerInitialChecks = require("../middleware/registerChecks")
 
-var register = require("../controllers/register")
+var {register,registerSuperAdmin} = require("../controllers/register")
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -20,4 +20,5 @@ router.get('/test', function(req, res, next) {
 
 
 router.post('/register',registerInitialChecks,register);
+router.post('/register-super-admin',registerInitialChecks,registerSuperAdmin);
 module.exports = router;

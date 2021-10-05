@@ -1,12 +1,12 @@
 const {Sequelize}=require("sequelize");
-
+const{sequelize_database,sequelize_username,sequelize_password,sequelize_host,sequelize_dialect,}=require("../config");
 const sequelize =new Sequelize(
-    "postgres",
-    "postgres",
-    "Pratibha",
+    sequelize_database,
+    sequelize_username,
+    sequelize_password,
     {
-        host:"localhost",
-        dialect:"postgres"
+        host:sequelize_host,
+        dialect:sequelize_dialect
     }
 );
 

@@ -10,7 +10,7 @@ require("./database/mongo");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-
+var passport = require('passport');
 var app = express();
 
 // view engine setup
@@ -34,6 +34,10 @@ app.use(session({
     maxAge:1000*60*10
   }
 }))
+app.use(passport.initialize());
+require("./middleware/passport")(passport);
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
