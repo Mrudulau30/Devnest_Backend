@@ -10,7 +10,7 @@ const sequelize =new Sequelize(
     }
 );
 
-sequelize.sync();
+sequelize.sync({alter:true});
 (async()=>{
     try{
         await sequelize.authenticate();
